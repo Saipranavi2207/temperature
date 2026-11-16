@@ -1,5 +1,3 @@
-
-# Weekly Temperature Calculator
 import sys
 
 temps = [float(x) for x in sys.argv[1:8]]
@@ -9,6 +7,10 @@ if len(temps) != 7:
     sys.exit(1)
 
 average = sum(temps) / 7
+highest = max(temps)
+lowest = min(temps)
 
 print("Weekly Temperatures:", temps)
 print("Average Temperature:", average)
+print("Highest Temperature:", highest)
+print("Lowest Temperature:", lowest)
